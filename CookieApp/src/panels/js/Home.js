@@ -28,7 +28,7 @@ class Home extends React.Component {
 	  		}
 	  	}).then(function(response) {
 	  		console.log(response);
-	  		this.setState({message: response.last_name});	  		
+	  		this.setState({message: '1'});	  		
 	  	});
 	}
 
