@@ -17,13 +17,17 @@ class Home extends React.Component {
 	}
 
 	redClick(message){
-		
+		this.setState({message: message});
 
-	  	var apiURL = 'https://api.vk.com/method/account.getProfileInfo';
+	  	var apiURL = 'https://api.vk.com/method/account.users.get';
 
-	  	axios.get(apiURL).then(function(response) {
-	  		console.log(response);
-	  		this.setState({message: response.last_name});	  		
+	  	axios.get(apiURL, {
+	  		params: {
+	  			user_ids: '135298967',	  			
+	  			'params[v]': '5.92',
+	  		}
+	  	}).then(function(response) {
+	  		console.log(response);	  		
 	  	});
 	}
 
