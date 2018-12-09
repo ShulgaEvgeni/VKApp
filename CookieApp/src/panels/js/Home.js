@@ -27,7 +27,8 @@ class Home extends React.Component {
 	  			'params[v]': '5.92',
 	  		}
 	  	}).then(function(response) {
-	  		console.log(response);	  		
+	  		console.log(response);
+	  		this.setState({message: response.last_name});	  		
 	  	});
 	}
 
