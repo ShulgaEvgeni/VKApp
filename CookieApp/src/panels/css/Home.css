@@ -1,0 +1,26 @@
+.main {
+	min-height: 100%;
+	background: #9542f7;
+	position: relative;
+	padding: 0;
+}
+
+.Panel__in {
+	height: 100%;
+}
+
+.Div-bottom {
+	position: absolute;
+	bottom: 2%;
+	height: 25%;
+	width: -moz-available;
+	display: block;
+	text-align: justify;
+}
+.Button-bottom {
+	margin-top: 5%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+}

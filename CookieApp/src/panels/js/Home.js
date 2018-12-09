@@ -1,34 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Panel, ListItem, Button, Group, Div, Avatar, PanelHeader} from '@vkontakte/vkui';
+import '../css/Home.css';
 
 const Home = props => (
 	<Panel id={props.id}>
 		<PanelHeader>Example</PanelHeader>
-		{props.fetchedUser &&
-		<Group title="User Data Fetched with VK Connect">
-			<ListItem
-				before={<Avatar src={props.fetchedUser.photo_200}/>}
-				description={props.fetchedUser.city.title}
-			>
-				{`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`}
-			</ListItem>
-		</Group>}
+		<Div className="main">
+			<Div> 
+				<Button size="x1" level="1" onClick={props.go} data-to="persik">Show me the Persik, please</Button>
+			</Div>
 
-		<Div> 
-			<Button size="xl" level="2" onClick={props.go} data-to="persik">Show me the Persik, please</Button>
-			<p>Имя</p>
+			<Div> 
+			
+			</Div>
+
+			<Div className="Div-bottom"> 
+				<Button className="Button-bottom" size="xl" level="2" onClick={props.go} data-to="persik">Show me the Persik, please</Button>
+				<Button className="Button-bottom" size="xl" level="2" onClick={props.go} data-to="persik">Show me the Persik, please</Button>
+			</Div>	
 		</Div>
-
-		<Div> 
-		
-		</Div>
-
-		<Div> 
-
-			<Button size="xl" level="2" onClick={props.go} data-to="persik">Show me the Persik, please</Button>
-			<Button size="xl" level="2" onClick={props.go} data-to="persik">Show me the Persik, please</Button>
-		</Div>	
 	</Panel>
 );
 
