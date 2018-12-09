@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Panel, PanelHeader, HeaderButton, platform, IOS} from '@vkontakte/vkui';
-import persik from '../img/persik.png';
-import './Persik.css';
+import persik from '../../img/persik.png';
+import '../css/Persik.css';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 
