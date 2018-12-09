@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Panel, PanelHeader, HeaderButton, platform, IOS} from '@vkontakte/vkui';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
-import './Goroskop.css';
+import '../css/Goroskop.css';
 import axios from 'axios';
 
 const osname = platform();
@@ -16,7 +16,7 @@ class Goroskop extends React.Component {
 		}
 	}
 
-	redClick = (message) => {
+	redClick(message){
 		this.setState({message: message});
 
 	  	var apiURL = 'https://goroskop2.irsib.pro/backend/API.php';

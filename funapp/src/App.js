@@ -3,9 +3,9 @@ import connect from '@vkontakte/vkui-connect';
 import { View } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
-import Home from './panels/Home';
-import Persik from './panels/Persik';
-import Goroskop from './panels/Goroskop';
+import Home from './panels/js/Home';
+import Persik from './panels/js/Persik';
+import Goroskop from './panels/js/Goroskop';
 
 class App extends React.Component {
 	constructor(props) {
