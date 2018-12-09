@@ -18,6 +18,8 @@ const Persik = props => (
 		</PanelHeader>
 			<p>Persik</p>
 			<img className='Persik' src={persik} alt="persik qwe"/>
+			<img className='Persik' src={persik} alt="persik qwe"/>
+			<img className='Persik' src={persik} alt="persik qwe"/>
 
 	</Panel>
 );
