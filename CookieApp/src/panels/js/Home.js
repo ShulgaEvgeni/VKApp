@@ -17,9 +17,7 @@ const Home = props => (
 
 		<Div> 
 			<Button size="xl" level="2" onClick={props.go} data-to="persik">Show me the Persik, please</Button>
-			<p before={<Avatar src={props.fetchedUser.photo_200}/>}
-				description={props.fetchedUser.city.title}
-			>
+			<p>
 				{`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`}
 			</p>
 		</Div>
