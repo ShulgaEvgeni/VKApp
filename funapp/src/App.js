@@ -8,6 +8,10 @@ import Persik from './panels/js/Persik';
 import Goroskop from './panels/js/Goroskop';
 */
 import './App.css';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+import Main from './components/js/Main';
+import Second from './components/js/Second';
+
 
 class App extends React.Component {
 	constructor(props) {
@@ -39,7 +43,13 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="blue">
-				<p>qwe qwe qwe</p>
+				<div>
+					<a href="/"> main </a> | <a href="/Second"> not main </a>
+				</div>
+				<Switch location={this.props.location}>
+					<Route exact path="/" render={props => <Main {...props} />} />
+					<Route exact path="/Second" render={props => <Second {...props} />} />
+				</Switch>
 			</div>
 		);
 	}

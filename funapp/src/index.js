@@ -13,4 +13,9 @@ connect.send('VKWebAppInit', {});
 // Service Worker For Cache
 registerServiceWorker();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>
+), document.getElementById('root'))
