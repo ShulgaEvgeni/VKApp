@@ -43,7 +43,7 @@
 }
 
 .Div-bottom {
-	position: absolute;
+	position: relative;
 	bottom: 2%;
 	height: 25%;
 	width: -moz-available;
@@ -63,8 +63,6 @@
 	background: linear-gradient(to right, #bd8a4d, #efcb84);
 	font-weight: bold;
 	color: white;
-	width: 100%;
-	margin-left: 25%;
 }
 .Div-bottom .bottom {
 	background: #9542f7;
