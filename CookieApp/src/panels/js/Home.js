@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import { Panel, ListItem, Button, Group, Div, Avatar, PanelHeader} from '@vkontakte/vkui';
 import {HeaderButton, platform, IOS} from '@vkontakte/vkui';
 import '../css/Home.css';
-import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
-import Icon24Back from '@vkontakte/icons/dist/24/back';
-
+import persik from '../../img/persik.png';
 const osname = platform();
 const Home = props => (
 	<Panel id={props.id}>
@@ -16,6 +14,10 @@ const Home = props => (
 			<Div className="Div-top"> 
 				<Button className="Button-top" size="x1" level="4" onClick={props.go} data-to="persik">Купить печеньки</Button>
 				<p> имя и какой-то текст</p>
+			</Div>
+
+			<Div className="Dib-mid">
+				<img className="Persik"  src={persik} alt="qwe" />
 			</Div>
 
 			<Div className="Div-bottom"> 
