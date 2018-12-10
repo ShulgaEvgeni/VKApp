@@ -7,7 +7,7 @@ import Home from './panels/js/Home';
 import Persik from './panels/js/Persik';
 import Goroskop from './panels/js/Goroskop';
 */
-import './App.css'
+import './App.css';
 
 class App extends React.Component {
 	constructor(props) {
