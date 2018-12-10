@@ -1,11 +1,13 @@
 import React from 'react';
 import connect from '@vkontakte/vkui-connect';
-import { View } from '@vkontakte/vkui';
-import '@vkontakte/vkui/dist/vkui.css';
-
+//import { View } from '@vkontakte/vkui';
+//import '@vkontakte/vkui/dist/vkui.css';
+/*
 import Home from './panels/js/Home';
 import Persik from './panels/js/Persik';
 import Goroskop from './panels/js/Goroskop';
+*/
+import './App.css'
 
 class App extends React.Component {
 	constructor(props) {
@@ -36,11 +38,9 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<View activePanel={this.state.activePanel}>
-				<Home id="home" fetchedUser={this.state.fetchedUser} go={this.go} />
-				<Persik id="persik" go={this.go} />
-				<Goroskop id="goroskop" go={this.go} />
-			</View>
+			<div className="blue">
+				<p>qwe qwe qwe</p>
+			</div>
 		);
 	}
 }
