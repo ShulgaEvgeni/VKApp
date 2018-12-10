@@ -5,9 +5,34 @@
 	padding: 0;
 }
 
+.Header {
+	background: #9542f7;
+}
+
 .Panel__in {
 	height: 100%;
 }
+
+.Div-top {
+	height: 25%;
+	display: block;
+	position: absolute;
+	width: -moz-available;
+	text-align: center;
+	color: white
+}
+.Button-top {
+	margin-top: 5%;
+	width: 50%;
+	height: 25%;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-weight: bolder;
+	color: #9542f7;
+	border-radius: 50px;
+}
+
+
 
 .Div-bottom {
 	position: absolute;
@@ -17,10 +42,24 @@
 	display: block;
 	text-align: justify;
 }
-.Button-bottom {
+.Div-bottom button {
 	margin-top: 5%;
 	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
+	height: 25%;
+	margin-left: 15%;
+	margin-right: 15%;
 	border-radius: 50px;
 }
+
+.Div-bottom .top {
+	background: linear-gradient(to right, #bd8a4d, #efcb84);
+	font-weight: bold;
+	color: white;
+}
+.Div-bottom .bottom {
+	background: #9542f7;
+	font-weight: bold;
+	border-color: #efcb84;
+	color:  #efcb84;
+}
+
